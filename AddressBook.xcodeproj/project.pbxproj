@@ -13,6 +13,9 @@
 		3C73B4F31E4C07CB0003E6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C73B4F21E4C07CB0003E6D9 /* Assets.xcassets */; };
 		3C73B4F61E4C07CB0003E6D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C73B4F41E4C07CB0003E6D9 /* LaunchScreen.storyboard */; };
 		3C73B5011E4C07CB0003E6D9 /* AddressBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73B5001E4C07CB0003E6D9 /* AddressBookTests.swift */; };
+		3C73B50C1E4C0BE20003E6D9 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73B50B1E4C0BE20003E6D9 /* Contact.swift */; };
+		3C73B50E1E4C0C620003E6D9 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73B50D1E4C0C620003E6D9 /* ContactTableViewController.swift */; };
+		3C73B5101E4C0C780003E6D9 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73B50F1E4C0C780003E6D9 /* ContactTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		3C73B4FC1E4C07CB0003E6D9 /* AddressBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C73B5001E4C07CB0003E6D9 /* AddressBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookTests.swift; sourceTree = "<group>"; };
 		3C73B5021E4C07CB0003E6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C73B50B1E4C0BE20003E6D9 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		3C73B50D1E4C0C620003E6D9 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		3C73B50F1E4C0C780003E6D9 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 				3C73B4F21E4C07CB0003E6D9 /* Assets.xcassets */,
 				3C73B4F41E4C07CB0003E6D9 /* LaunchScreen.storyboard */,
 				3C73B4F71E4C07CB0003E6D9 /* Info.plist */,
+				3C73B50B1E4C0BE20003E6D9 /* Contact.swift */,
+				3C73B50D1E4C0C620003E6D9 /* ContactTableViewController.swift */,
+				3C73B50F1E4C0C780003E6D9 /* ContactTableViewCell.swift */,
 			);
 			path = AddressBook;
 			sourceTree = "<group>";
@@ -201,6 +210,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C73B50E1E4C0C620003E6D9 /* ContactTableViewController.swift in Sources */,
+				3C73B5101E4C0C780003E6D9 /* ContactTableViewCell.swift in Sources */,
+				3C73B50C1E4C0BE20003E6D9 /* Contact.swift in Sources */,
 				3C73B4EE1E4C07CB0003E6D9 /* ViewController.swift in Sources */,
 				3C73B4EC1E4C07CB0003E6D9 /* AppDelegate.swift in Sources */,
 			);
