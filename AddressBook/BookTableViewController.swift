@@ -18,7 +18,7 @@ class BookTableViewController: UITableViewController {
 //    var People: [Person] = [Person(name: "The",address: "Van Con",phonenumber: "0906318686"),
 //                            Person(name: "Dung", address: "Thach That", phonenumber: "1234567890")
 //                            
-    var People = AddressServices().people
+    var contacts = AddressServices().people
     
 
     override func viewDidLoad() {
@@ -45,14 +45,14 @@ class BookTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return People.count
+        return contacts.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PeopleCell", for: indexPath)
-        cell.textLabel?.text = People[indexPath.row].name + " - " + People[indexPath.row].address
-        cell.detailTextLabel?.text = People[indexPath.row].phoneNumber
+        cell.textLabel?.text = contacts[indexPath.row].name + " - " + contacts[indexPath.row].address
+        cell.detailTextLabel?.text = contacts[indexPath.row].phoneNumber
 
         return cell
     }
@@ -102,5 +102,16 @@ class BookTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func unwindToContactList(sender: UIStoryboardSegue){
+        if let sourceViewController = sender.source as? ViewController, let contact = sourceViewController.contact {
+            //add new contact
+            let newIndexPath = IndexPath(row: contacts.count, section: 0)
+            contacts.append(contact)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+        
+    }
+
 
 }

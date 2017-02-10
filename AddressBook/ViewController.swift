@@ -31,7 +31,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
         let name = nameLabel.text ?? ""
         let phone = phoneLabel.text ?? ""
-        contact = Contact(name: name, phone: phone)
+        contact = Contact(name: name,address: "", phone: phone)
     }
     //MARK: Action
     @IBAction func cancel(_ sender: UIBarButtonItem) {
