@@ -9,11 +9,11 @@
 import Foundation
 
 class AddressServices {
-    var people :[Contacts] {
-        return [Contacts(name: "as", address: "sss", phoneNumber: "1111"), Contacts(name: "The", address: "VanCon", phoneNumber: "123233323") ]
+    var people :[Contact] {
+        return [Contact(name: "as", address: "sss", phoneNumber: "1111"), Contact(name: "The", address: "VanCon", phoneNumber: "123233323") ]
     }
 }
-struct Contacts {
+struct  Contact{
     var name: String = ""
     var address: String = ""
     var phoneNumber: String = ""

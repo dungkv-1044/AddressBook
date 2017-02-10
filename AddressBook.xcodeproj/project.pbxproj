@@ -11,12 +11,11 @@
 		188AF07D1E4C0A2900B0DFC4 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AF07C1E4C0A2900B0DFC4 /* BookTableViewController.swift */; };
 		188AF07F1E4C0AE200B0DFC4 /* AddressServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AF07E1E4C0AE200B0DFC4 /* AddressServices.swift */; };
 		3C73B4EC1E4C07CB0003E6D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73B4EB1E4C07CB0003E6D9 /* AppDelegate.swift */; };
-		3C73B4EE1E4C07CB0003E6D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73B4ED1E4C07CB0003E6D9 /* ViewController.swift */; };
+		3C73B4EE1E4C07CB0003E6D9 /* ContactDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73B4ED1E4C07CB0003E6D9 /* ContactDetailsVC.swift */; };
 		3C73B4F11E4C07CB0003E6D9 /* AddressTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C73B4EF1E4C07CB0003E6D9 /* AddressTable.storyboard */; };
 		3C73B4F31E4C07CB0003E6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C73B4F21E4C07CB0003E6D9 /* Assets.xcassets */; };
 		3C73B4F61E4C07CB0003E6D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C73B4F41E4C07CB0003E6D9 /* LaunchScreen.storyboard */; };
 		3C73B5011E4C07CB0003E6D9 /* AddressBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73B5001E4C07CB0003E6D9 /* AddressBookTests.swift */; };
-		3C73B50C1E4C0BE20003E6D9 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73B50B1E4C0BE20003E6D9 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +34,7 @@
 		188AF07E1E4C0AE200B0DFC4 /* AddressServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressServices.swift; sourceTree = "<group>"; };
 		3C73B4E81E4C07CB0003E6D9 /* AddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C73B4EB1E4C07CB0003E6D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C73B4ED1E4C07CB0003E6D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C73B4ED1E4C07CB0003E6D9 /* ContactDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsVC.swift; sourceTree = "<group>"; };
 		3C73B4F01E4C07CB0003E6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddressTable.storyboard; sourceTree = "<group>"; };
 		3C73B4F21E4C07CB0003E6D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C73B4F51E4C07CB0003E6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,7 +42,6 @@
 		3C73B4FC1E4C07CB0003E6D9 /* AddressBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C73B5001E4C07CB0003E6D9 /* AddressBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookTests.swift; sourceTree = "<group>"; };
 		3C73B5021E4C07CB0003E6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C73B50B1E4C0BE20003E6D9 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3C73B4EB1E4C07CB0003E6D9 /* AppDelegate.swift */,
-				3C73B4ED1E4C07CB0003E6D9 /* ViewController.swift */,
+				3C73B4ED1E4C07CB0003E6D9 /* ContactDetailsVC.swift */,
 				3C73B4EF1E4C07CB0003E6D9 /* AddressTable.storyboard */,
 				180B1BC81E4C294E00B7B3E1 /* Main.storyboard */,
 				3C73B4F21E4C07CB0003E6D9 /* Assets.xcassets */,
@@ -94,7 +92,6 @@
 				3C73B4F71E4C07CB0003E6D9 /* Info.plist */,
 				188AF07C1E4C0A2900B0DFC4 /* BookTableViewController.swift */,
 				188AF07E1E4C0AE200B0DFC4 /* AddressServices.swift */,
-				3C73B50B1E4C0BE20003E6D9 /* Contact.swift */,
 			);
 			path = AddressBook;
 			sourceTree = "<group>";
@@ -214,8 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C73B50C1E4C0BE20003E6D9 /* Contact.swift in Sources */,
-				3C73B4EE1E4C07CB0003E6D9 /* ViewController.swift in Sources */,
+				3C73B4EE1E4C07CB0003E6D9 /* ContactDetailsVC.swift in Sources */,
 				188AF07D1E4C0A2900B0DFC4 /* BookTableViewController.swift in Sources */,
 				188AF07F1E4C0AE200B0DFC4 /* AddressServices.swift in Sources */,
 				3C73B4EC1E4C07CB0003E6D9 /* AppDelegate.swift in Sources */,

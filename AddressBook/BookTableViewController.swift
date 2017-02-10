@@ -104,7 +104,7 @@ class BookTableViewController: UITableViewController {
     */
     
     @IBAction func unwindToContactList(sender: UIStoryboardSegue){
-        if let sourceViewController = sender.source as? ViewController, let contact = sourceViewController.contact {
+        if let sourceViewController = sender.source as? ContactDetailsVC, let contact = sourceViewController.contact {
             //add new contact
             let newIndexPath = IndexPath(row: contacts.count, section: 0)
             contacts.append(contact)

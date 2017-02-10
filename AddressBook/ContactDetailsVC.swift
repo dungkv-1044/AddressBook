@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ContactDetailsVC.swift
 //  AddressBook
 //
 //  Created by Khuất Dũng on 2/9/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 import  os.log
-class ViewController: UIViewController,UITextFieldDelegate {
+class ContactDetailsVC: UIViewController,UITextFieldDelegate {
     var contact: Contact?
     
     @IBOutlet weak var nameLabel: UITextField!
@@ -31,7 +31,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
         let name = nameLabel.text ?? ""
         let phone = phoneLabel.text ?? ""
-        contact = Contact(name: name,address: "", phone: phone)
+        contact = Contact(name: name,address: "",phoneNumber: phone)
     }
     //MARK: Action
     @IBAction func cancel(_ sender: UIBarButtonItem) {
