@@ -1,16 +1,26 @@
 //
-//  ContactTableViewController.swift
+//  BookTableViewController.swift
 //  AddressBook
 //
-//  Created by Khuất Dũng on 2/9/17.
+//  Created by Apple on 2/9/17.
 //  Copyright © 2017 Apple Inc. All rights reserved.
 //
 
 import UIKit
 
-class ContactTableViewController: UITableViewController {
+class BookTableViewController: UITableViewController {
+//    struct Person {
+//        var name: String
+//        var address: String
+//        var phonenumber: String
+//    }
+    
+//    var People: [Person] = [Person(name: "The",address: "Van Con",phonenumber: "0906318686"),
+//                            Person(name: "Dung", address: "Thach That", phonenumber: "1234567890")
+//                            
+    var contacts = AddressServices().people
+    
 
-    var contacts = [Contact]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,18 +50,13 @@ class ContactTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "ContactTableViewCell"
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ContactTableViewCell else {
-            fatalError("Erorr")
-        }
-        let contact = contacts[indexPath.row]
-        cell.nameLabel.text = contact.name
-        cell.phoneLabel.text = contact.phone
-       
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PeopleCell", for: indexPath)
+        cell.textLabel?.text = contacts[indexPath.row].name + " - " + contacts[indexPath.row].address
+        cell.detailTextLabel?.text = contacts[indexPath.row].phoneNumber
 
         return cell
     }
-    
+ 
 
     /*
     // Override to support conditional editing of the table view.
@@ -98,9 +103,8 @@ class ContactTableViewController: UITableViewController {
     }
     */
     
-    //Unwind
     @IBAction func unwindToContactList(sender: UIStoryboardSegue){
-        if let sourceViewController = sender.source as? ViewController, let contact = sourceViewController.contact {
+        if let sourceViewController = sender.source as? ContactDetailsVC, let contact = sourceViewController.contact {
             //add new contact
             let newIndexPath = IndexPath(row: contacts.count, section: 0)
             contacts.append(contact)
@@ -108,5 +112,6 @@ class ContactTableViewController: UITableViewController {
         }
         
     }
+
 
 }
